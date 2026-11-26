@@ -1,18 +1,188 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>
-	</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub | Student Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<header>
-		<nav></nav>
-	</header>
-	
-	<main></main>
-	<footer></footer>
 
+    <header class="header">
+        <div class="logo">
+            <span class="logo-icon">L</span>
+            <h1>LearnHub</h1>
+        </div>
+        <nav class="navigation">
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#resources">Resources</a>
+            <a href="#media">Media</a>
+            <a href="#about">About</a>
+        </nav>
+        <a href="#courses" class="header-button">Explore</a>
+    </header>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <span class="tag">STUDENT LEARNING PLATFORM</span>
+                <h2>Learn something new.<br>
+                    <span>Every single day.</span>
+                </h2>
+                <p>Your space for learning resources, tutorials, study materials and knowledge to help you succeed in your academic journey.</p>
+                <a href="#courses" class="primary-button">Explore Learning</a>
+            </div>
+            <figure class="hero-image">
+                <img src="images/hero.jpg" alt="University students walking around a university campus">
+                <figcaption>Learn, grow and achieve your goals.</figcaption>
+            </figure>
+        </section>
+        <section class="courses-section" id="courses">
+            <div class="section-heading">
+                <div>
+                    <span class="tag">START LEARNING</span>
+                    <h2>Explore Learning Categories</h2>
+                    <p>Discover subjects and improve your knowledge.</p>
+                </div>
+            </div>
+            <div class="course-grid">
+                <article class="course-card">
+                    <img src="images/pic1.jpg" alt="Computer and technology learning">
+                    <div class="card-content">
+                        <span class="category">Technology</span>
+                        <h3>Computer Science</h3>
+                        <p>Learn programming, web development, networking and computer fundamentals.</p>
+                        <a href="#resources">Explore resources</a>
+                    </div>
+                </article>
+                <article class="course-card">
+                    <img src="images/pic2.jpg" alt="Notebook and stationery for studying">
+                    <div class="card-content">
+                        <span class="category">Academic</span>
+                        <h3>Study Skills</h3>
+                        <p>Improve your study habits, time management and academic productivity.</p>
+                        <a href="#resources">Explore resources</a>
+                    </div>
+                </article>
+                <article class="course-card">
+                    <img src="images/pic3.jpg" alt="Student working on a laptop and taking notes">
+                    <div class="card-content">
+                        <span class="category">Career</span>
+                        <h3>Career Development</h3>
+                        <p>Develop professional skills, prepare your CV and explore career opportunities.</p>
+                        <a href="#resources">Explore resources</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section class="resource-layout" id="resources">
+            <div class="resource-main">
+                <div class="section-heading">
+                    <div>
+                        <span class="tag">STUDY MATERIALS</span>
+                        <h2>Popular Resources</h2>
+                    </div>
+                </div>
+                <article class="resource-item">
+                    <div class="resource-icon">Icon</div>
+                    <div>
+                        <h3>HTML & CSS Beginner Guide</h3>
+                        <p>Learn the basics of building and styling websites using HTML and CSS.</p>
+                        <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development" target="_blank">Read Guide</a>
+                    </div>
+                </article>
+                <article class="resource-item">
+                    <div class="resource-icon">Icon</div>
+                    <div>
+                        <h3>Programming Fundamentals</h3>
+                        <p>Understand variables, loops, conditions and basic programming concepts.</p>
+                        <a href="https://www.w3schools.com/"target="_blank">Start Learning</a>
+                    </div>
+                </article>
+                <article class="resource-item">
+                    <div class="resource-icon">Icon</div>
+                    <div>
+                        <h3>Academic Writing Guide</h3>
+                        <p>Improve your research, writing and referencing skills for assignments.</p>
+                        <a href="https://owl.purdue.edu/"target="_blank">View Guide</a>
+                    </div>
+                </article>
+            </div>
+            <aside class="sidebar">
+                <div class="sidebar-box">
+                    <h3>Announcements</h3>
+                    <div class="announcement">
+                        <strong>New Resources Available</strong>
+                        <p>New programming study materials have been added.</p>
+                    </div>
+                    <div class="announcement">
+                        <strong>Study Tip</strong>
+                        <p>Try studying for 25 minutes followed by a short break.</p>
+                    </div>
+                    <div class="announcement">
+                        <strong>Stay Organized</strong>
+                        <p>Keep track of your assignments and deadlines.</p>
+                    </div>
+                </div>
+                <div class="sidebar-box">
+                    <h3>Quick Links</h3>
+                    <ul>
+                      <li><a href="#courses">Learning Categories</a></li>
+                      <li><a href="#resources">Study Materials</a></li>
+                      <li><a href="#media">Learning Media</a></li>
+                      <li><a href="#about">About LearnHub</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </section>
+        <section class="media-section" id="media">
+            <div class="section-heading">
+                <div>
+                    <span class="tag">LEARN WITH MEDIA</span>
+                    <h2>Multimedia Learning</h2>
+                    <p>Use videos and audio to support your learning.</p>
+                </div>
+            </div>
+            <div class="media-grid">
+                <article class="media-card">
+                    <h3>Video Learning</h3>
+                    <p>Watch a video to improve your understanding.</p>
+                    <video controls>
+                      <source src="media/video.mp4" type="video/mp4">Your browser does not support video.
+                    </video>
+                </article>
+                <article class="media-card">
+                    <h3>Audio Learning</h3>
+                    <p>Listen to audio as part of your learning experience.</p>
+                    <audio controls>
+                      <source src="media/music.mp3"type="audio/mpeg">Your browser does not support audio.
+                    </audio>
+                </article>
+            </div>
+        </section>
+        <section class="about-section" id="about">
+            <div>
+                <span class="tag">ABOUT US</span>
+                <h2>Learning made simple.</h2>
+            </div>
+            <p>LearnHub is a student-focused platform designed to make educational resources easier to access. Students can explore study materials, tutorials, multimedia and useful academic links all in one place.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-content">
+            <div>
+                <h2>LearnHub</h2>
+                <p>Your learning journey starts here.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#courses">Courses</a>
+                <a href="#resources">Resources</a>
+                <a href="#media">Media</a>
+            </div>
+        </div>
+        <p class="copyright">© 2026 LearnHub. Created for educational purposes.</p>
+    </footer>
 </body>
 </html>
